@@ -1,0 +1,16 @@
+"sudo -su postgres"  => postgres@DESKTOP-7BPH5KM:/mnt/c/Users/tuong/OneDrive/Desktop/Education/aA/SQL/SQL_Fundamenttals/SQL_Zoo/skeleton$
+  "exit"			    => exit 
+"psql database_name" => database_name=#
+  "\dt"			    => list tables
+  SQL commands can go here: ex: SELECT * FROM actors;
+"psql"			  => psql=#
+  "\q"			    => exit
+
+"\du"			  => list all users, can create or grant access to users here, drop/create/alter db
+"psql db_name"	       => db_name=#		// directly from $
+	
+sudo service postgresql start     # start psql
+pg_lsclusters 					 # see what port psql is running on
+sudo service postgresql restart    # restart psql
+source ~/.bashrc
+ps -ef | grep postgres
